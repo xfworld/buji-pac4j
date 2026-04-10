@@ -21,7 +21,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>buji-pac4j</artifactId>
   <version>9.1.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>bundle</packaging>
   <name>pac4j bridge for Shiro</name>
   <description>Bridge from the pac4j security library to Shiro</description>
   <url>https://github.com/bujiio/buji-pac4j</url>
@@ -149,12 +149,6 @@
           <instructions>
             <Bundle-SymbolicName>io.buji.pac4j</Bundle-SymbolicName>
             <Export-Package>io.buji.pac4j*;version=${project.version}</Export-Package>
-            <Import-Package>
-              org.apache.shiro*;version="[1.2, 2)",
-              org.pac4j*;version="[5.0, 6.0)",
-              org.scribe*;version="[8.0)",
-              *
-            </Import-Package>
           </instructions>
         </configuration>
       </plugin>
